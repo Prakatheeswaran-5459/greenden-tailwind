@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link
+      href=" https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css "
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+      <!-- Responsive navbar -->
+      <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">Greenden</h1>
+  
+        <!-- Adjust the SVG size -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6 md:hidden"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+  
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+          <li>
+            <a href="index.html" class="hover:underline hover:text-black">Home</a>
+          </li>
+          <li>
+            <a href="products.html" class="hover:underline hover:text-black">Products</a>
+          </li>
+          <li>
+            <a href="products.html" class="hover:underline hover:text-black">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+      
+
+      
+
+      <div class="bg-white px-6 py-12 sm:py-24 lg:px-8">
+        <div class="mx-auto max-w-xl flex flex-col items-center justify-center text-center">
+          <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">Let's Talk</h1>
+          <p class="mt-3 text-lg text-gray-600">Feature request? Suggestion? or maybe you'd like to be our critic! Here's a form just for that.</p>
+        </div>
+        <form class="mx-auto mt-16 max-w-xl sm:mt-20">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+            <div>
+              <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
+              <div class="mt-2.5">
+                <input required="" type="text" name="first-name" id="first-name" autocomplete="given-name" placeholder="Your First Name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+            <div>
+              <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
+              <div class="mt-2.5">
+                <input required="" type="text" name="last-name" id="last-name" autocomplete="family-name" placeholder="Your Last Name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
+              <div class="mt-2.5">
+                <input required="" type="text" name="company" id="company" autocomplete="organization" placeholder="Your Company Name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+              <div class="mt-2.5">
+                <input required="" type="email" name="email" id="email" autocomplete="email" placeholder="Your Email Address" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="phone" class="block text-sm font-semibold leading-6 text-gray-900">Phone number</label>
+              <div class="mt-2.5">
+                <input required="" type="tel" name="phone" id="phone" autocomplete="tel" placeholder="Your Phone Number" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+              <div class="mt-2.5">
+                <textarea name="message" id="message" rows="4" placeholder="Share your thoughts..." class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10">
+            <button type="submit" class="bg-green-900 text-white rounded-sm py-2 w-full block">Submit →</button>
+          </div>
+        </form>
+      </div>
+      
+      
+
+
+
+    
+
+
+          <!-- footer  -->
+
+    <section class="bg-green-100 p-10 flex flex-col gap-5">
+        <h1 class="text-4xl font-bold">Greenden</h1>
+        <p>The Standard chunk of lorem ipsum used since the 1500s is is reprodused below for those interest</p>
+        <p>@ 2021 greenday.com</p>
+      </section>
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js "></script>
+</body>
+</html>
