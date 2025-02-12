@@ -10,29 +10,57 @@
   </head>
   <body>
     <!-- Responsive navbar -->
-    <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10" x-data="{ open: false }">
+    <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
       <h1 class="text-2xl md:text-4xl">Greenden</h1>
+
+      <!-- Adjust the SVG size -->
+      <svg id="menuicon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6 md:hidden"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+
+      <ul class="flex gap-5 text-gray-600 hidden md:flex">
+        <li>
+          <a href="index.html" class="hover:underline hover:text-black">Home</a>
+        </li>
+        <li>
+          <a href="products.html" class="hover:underline hover:text-black ">Products</a>
+        </li>
+        <li>
+          <a href="contact.html" class="hover:underline hover:text-black ">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <!-- side navbar -->
+     <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;right: -50%;">
+      <div class="text-right p-5">
+        <p id="close-nav" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col gap-10 items-center text-gray-600 ">
+        <li>
+          <a href="index.html" class="hover:underline hover:text-black">Home</a>
+        </li>
+        <li>
+          <a href="products.html" class="hover:underline hover:text-black ">Products</a>
+        </li>
+        <li>
+          <a href="contact.html" class="hover:underline hover:text-black ">Contact</a>
+        </li>
+      </ul>
       
-      <button @click="open = !open" class="h-6 w-6 md:hidden focus:outline-none">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-      </button>
-
-      <ul class="hidden md:flex gap-5 text-gray-600">
-          <li><a href="index.html" class="hover:underline hover:text-black">Home</a></li>
-          <li><a href="products.html" class="hover:underline hover:text-black">Products</a></li>
-          <li><a href="contact.html" class="hover:underline hover:text-black">Contact</a></li>
-      </ul>
-
-      <!-- Mobile Menu -->
-      <ul x-show="open" @click.away="open = false" class="absolute top-full left-0 w-full bg-green-100 flex flex-col text-center text-gray-600 md:hidden shadow-md">
-          <li class="border-b border-gray-300 p-3"><a href="index.html" class="hover:underline hover:text-black">Home</a></li>
-          <li class="border-b border-gray-300 p-3"><a href="products.html" class="hover:underline hover:text-black">Products</a></li>
-          <li class="p-3"><a href="contact.html" class="hover:underline hover:text-black">Contact</a></li>
-      </ul>
-  </nav>
-
+     </section>
 
     <!-- header -->
 
@@ -178,5 +206,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="script.js"></script>
   </body>
 </html>
